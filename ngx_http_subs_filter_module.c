@@ -267,7 +267,7 @@ ngx_http_subs_header_filter(ngx_http_request_t *r)
 
     if (r == r->main) {
         ngx_http_clear_content_length(r);
-        ngx_http_clear_last_modified(r);
+        /*ngx_http_clear_last_modified(r);*/
     }
 
     return ngx_http_next_header_filter(r);
